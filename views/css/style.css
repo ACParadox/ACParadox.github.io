@@ -1,9 +1,11 @@
+/*csslint important:false, universal-selector:false, order-alphabetical:false, ids:false*/
+
+
 /** {
   outline: 1px solid red !important;
 }*/
+
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -box-sizing: border-box;
 }
 
@@ -43,9 +45,10 @@ form {
 .randomPizzaContainer:after {
   content: "";
   display: table;
-  clear:both;
+  clear: both;
 }
 
- .container {
+.container {
+  background-color: rgb(240, 60, 60);
   background-color: rgba(240, 60, 60, 0.8);
 }
