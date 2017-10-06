@@ -1,11 +1,11 @@
 # One year for image files
 <filesMatch ".(jpg|jpeg|png|gif|ico)$">
-Header set Cache-Control "max-age=60, public"
+Header set Cache-Control "max-age=60000, public"
 </filesMatch>
 
 # One month for css and js
 <filesMatch ".(css|js)$">
-Header set Cache-Control "max-age=60, public"
+Header set Cache-Control "max-age=60000, public"
 </filesMatch>
 
 ########## Begin - ETag Optimization
