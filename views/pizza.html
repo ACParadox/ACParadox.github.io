@@ -4,6 +4,70 @@
 <head>
   <title>Pizza</title>
   <style type="text/css">
+    /* open-sans-regular - latin */
+
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Open Sans Regular'), local('OpenSans-Regular'), url('fonts/open-sans-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('fonts/open-sans-v14-latin-regular.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* open-sans-700 - latin */
+
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      src: local('Open Sans Bold'), local('OpenSans-Bold'), url('fonts/open-sans-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('fonts/open-sans-v14-latin-700.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    * {
+      -box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      background: black;
+    }
+
+    input {
+      background: grey;
+      font-size: 18px;
+    }
+
+    form {
+      display: inline-block;
+    }
+
+    .centered {
+      text-align: center;
+    }
+
+    #pizzaSize {
+      font-weight: 800;
+    }
+
+    .mover {
+      position: fixed;
+      width: 256px;
+      z-index: -1;
+    }
+
+    .randomPizzaContainer {
+      float: left;
+      display: flex;
+    }
+
+    .randomPizzaContainer:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
     a:active,
     a:focus,
     a:hover {

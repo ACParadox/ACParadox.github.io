@@ -8,8 +8,6 @@
   <meta name="author" content=" FILL ME IN ">
   <title>Cameron Pittman: Portfolio</title>
 
-  <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-  <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
 
   <style type="text/css">
     a:active,
@@ -155,6 +153,73 @@
       header p {
         padding-left: 4.5em
       }
+    }
+    /*csslint important:false, universal-selector:false, order-alphabetical:false, ids:false*/
+    /** {
+  outline: 1px solid red !important;
+}*/
+    /* open-sans-regular - latin */
+
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Open Sans Regular'), local('OpenSans-Regular'), url('fonts/open-sans-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('fonts/open-sans-v14-latin-regular.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* open-sans-700 - latin */
+
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      src: local('Open Sans Bold'), local('OpenSans-Bold'), url('fonts/open-sans-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('fonts/open-sans-v14-latin-700.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    * {
+      -box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      background: black;
+    }
+
+    input {
+      background: grey;
+      font-size: 18px;
+    }
+
+    form {
+      display: inline-block;
+    }
+
+    .centered {
+      text-align: center;
+    }
+
+    #pizzaSize {
+      font-weight: 800;
+    }
+
+    .mover {
+      position: fixed;
+      width: 256px;
+      z-index: -1;
+    }
+
+    .randomPizzaContainer {
+      float: left;
+      display: flex;
+    }
+
+    .randomPizzaContainer:after {
+      content: "";
+      display: table;
+      clear: both;
     }
   </style>
 
